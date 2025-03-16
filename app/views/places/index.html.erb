@@ -1,5 +1,7 @@
+<div class= "p-4">
 <h1>Places</h1>
 
+<div class= "pt-3">
 <%if @current_user != nil%>
 <ul>
   <% for place in @places %>
@@ -9,7 +11,9 @@
 <p>
   <a class="btn btn-primary" href="/places/new" role="button">New place</a>
 </p>
+</div>
 
 <% else %>
-<h2>Login or sign up to see places!</h2>
+<h2>Login to see places!</h2>
 <% end %>
+</div>
